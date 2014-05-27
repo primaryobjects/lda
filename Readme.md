@@ -26,7 +26,7 @@ var documents = text.match( /[^\.!\?]+[\.!\?]+/g );
 var result = lda(documents, 2, 5);
 ```
 
-The above example produces the following result for 2 topics (Topic 1 is "cat-related", Topics 2 is "dog-related"):
+The above example produces the following result with two topics (topic 1 is "cat-related", topic 2 is "dog-related"):
 ```
 Topic 1
 cats (0.21%)
