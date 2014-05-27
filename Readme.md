@@ -27,6 +27,7 @@ var result = lda(documents, 2, 5);
 ```
 
 The above example produces the following result for 2 topics (Topic 1 is "cat-related", Topics 2 is "dog-related"):
+```
 Topic 1
 cats (0.21%)
 dogs (0.19%)
@@ -40,6 +41,7 @@ cats (0.19%)
 big (0.11%)
 eat (0.1%)
 bones (0.1%)
+```
 
 ## Output
 
