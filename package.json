@@ -1,7 +1,7 @@
 {
   "name": "lda",
   "version": "0.1.1",
-  "description": "LDA topic modelling for node.js.",
+  "description": "LDA topic modeling for node.js.",
   "author": {
     "name": "Kory Becker",
     "email": "kbecker@primaryobjects.com",
@@ -35,6 +35,8 @@
 	"natural language processing",
 	"natural language",
 	"topic model",
+	"topic modeling",
+	"topic modelling",
 	"nlp",
 	"topics",
 	"document",
