@@ -1,0 +1,45 @@
+{
+  "name": "lda",
+  "version": "0.1.1",
+  "description": "Latent Dirichlet allocation (LDA) algorithm in node.js. Easily generate topic models in javascript from an array of strings or documents.",
+  "author": {
+    "name": "Kory Becker",
+    "email": "kbecker@primaryobjects.com",
+    "url": "http://www.primaryobjects.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/primaryobjects/lda.git"
+  },
+  "main": "./lib",
+  "dependencies": {
+	"stem-porter": "*"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "lda",
+    "Latent Dirichlet allocation",
+    "Latent Dirichlet",
+    "Dirichlet",
+    "machine learning",
+	"ml",
+	"artificial intelligence",
+	"natural language processing",
+	"natural language",
+	"topic model",
+	"nlp",
+	"topics",
+	"document",
+	"words"
+  ],
+  "_id": "lda@0.1.1",
+  "_from": "lda"
+}
