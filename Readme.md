@@ -84,3 +84,6 @@ for (var i in result) {
 
 Kory Becker
 http://www.primaryobjects.com
+
+Based on original javascript implementation
+https://github.com/awaisathar/lda.js
