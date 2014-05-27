@@ -20,8 +20,8 @@
   },
   "licenses": [
     {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
+      "type": "Apache",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
   "keywords": [
