@@ -1,7 +1,7 @@
 {
   "name": "lda",
   "version": "0.1.1",
-  "description": "Latent Dirichlet allocation (LDA) algorithm in node.js. Easily generate topic models in javascript from an array of strings or documents.",
+  "description": "LDA topic modelling for node.js.",
   "author": {
     "name": "Kory Becker",
     "email": "kbecker@primaryobjects.com",
