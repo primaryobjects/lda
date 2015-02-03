@@ -1,11 +1,11 @@
 {
   "name": "lda",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "LDA topic modeling for node.js.",
   "author": {
     "name": "Kory Becker",
     "email": "kbecker@primaryobjects.com",
-    "url": "http://www.primaryobjects.com"
+    "url": "http://www.primaryobjects.com/kory-becker"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,6 @@
 	"document",
 	"words"
   ],
-  "_id": "lda@0.1.2",
+  "_id": "lda@0.1.3",
   "_from": "lda"
 }
