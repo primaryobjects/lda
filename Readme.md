@@ -80,6 +80,32 @@ for (var i in result) {
 }
 ```
 
+## Additional Languages
+
+LDA uses [stop-words](https://en.wikipedia.org/wiki/Stop_words) to ignore common terms in the text (for example: this, that, it, we). By default, the stop-words list uses English. To use additional languages, you can specify an array of language ids, as follows: 
+
+```javascript
+// Use English (this is the default).
+result = lda(documents, 2, 5, ['en']);
+
+// Use German.
+result = lda(documents, 2, 5, ['de']);
+
+// Use English + German.
+result = lda(documents, 2, 5, ['en', 'de']);
+```
+
+To add a new language-specific stop-words list, create a file /lda/lib/stopwords_XX.js where XX is the id for the language. For example, a French stop-words list could be named "stopwords_fr.js". The contents of the file should follow the format of an [existing](https://github.com/primaryobjects/lda/blob/master/lib/stopwords_en.js) stop-words list. The format is, as follows:
+
+```javascript
+exports.stop_words = [
+    'cette',
+    'que',
+    'une',
+    'il'
+];
+```
+
 ## Author
 
 Kory Becker
