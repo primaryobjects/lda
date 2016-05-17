@@ -1,6 +1,6 @@
 {
   "name": "lda",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "LDA topic modeling for node.js.",
   "author": {
     "name": "Kory Becker",
@@ -42,6 +42,6 @@
 	"document",
 	"words"
   ],
-  "_id": "lda@0.1.6",
+  "_id": "lda@0.1.7",
   "_from": "lda"
 }
