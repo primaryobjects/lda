@@ -106,6 +106,15 @@ exports.stop_words = [
 ];
 ```
 
+## Setting a Random Seed
+
+A specific random seed can be used to compute the same terms and probabilities during subsequent runs. You can specify the random seed, as follows:
+
+```javascript
+// Use the random seed 123.
+result = lda(documents, 2, 5, null, null, null, 123);
+```
+
 ## Author
 
 Kory Becker
