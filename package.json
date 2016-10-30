@@ -1,6 +1,6 @@
 {
   "name": "lda",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "LDA topic modeling for node.js.",
   "author": {
     "name": "Kory Becker",
@@ -13,7 +13,7 @@
   },
   "main": "./lib",
   "dependencies": {
-	"stem-porter": "*"
+  "stem-porter": "*"
   },
   "engines": {
     "node": ">= 0.8.x"
@@ -30,18 +30,18 @@
     "Latent Dirichlet",
     "Dirichlet",
     "machine learning",
-	"ml",
-	"artificial intelligence",
-	"natural language processing",
-	"natural language",
-	"topic model",
-	"topic modeling",
-	"topic modelling",
-	"nlp",
-	"topics",
-	"document",
-	"words"
+    "ml",
+    "artificial intelligence",
+    "natural language processing",
+    "natural language",
+    "topic model",
+    "topic modeling",
+    "topic modelling",
+    "nlp",
+    "topics",
+    "document",
+    "words"
   ],
-  "_id": "lda@0.1.8",
+  "_id": "lda@0.1.9",
   "_from": "lda"
 }

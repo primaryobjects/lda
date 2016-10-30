@@ -50,3 +50,7 @@ if ((results[0][0][0].probability != 0.18 || results[0][0][1].probability != 0.1
 if (isOk) {
     console.log('\nRandom seed (' + seed + ') OK.');
 }
+
+// Test with no documents.
+var noDocsResult = lda(null, 2, 5);
+console.log(noDocsResult.length == 0);
