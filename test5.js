@@ -51,7 +51,7 @@ if (result2) {
 console.log('\nUsing English and Spanish stop-words.');
 var result3 = findTerm(target_term, result_multi);
 if (result3) {
-  console.log('\nFailed English, Spanish, invalid stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
+  console.log('\nFailed Multiple stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
   return;
 }
 
