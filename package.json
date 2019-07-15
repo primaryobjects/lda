@@ -13,7 +13,7 @@
   },
   "main": "./lib",
   "dependencies": {
-  "stem-porter": "*"
+    "stem-porter": "*"
   },
   "engines": {
     "node": ">= 0.8.x"
