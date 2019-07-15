@@ -38,21 +38,21 @@ console.log('Using English stop-words.');
 var result1 = findTerm(target_term, result_en);
 if (!result1) {
   console.log('\nFailed English stop-words check. Failed to find expected stop-word: "' + target_term + '" as a topic.')
-  success = false;
+  return;
 }
 
 console.log('\nUsing Spanish stop-words.');
 var result2 = findTerm(target_term, result_es)
 if (result2) {
   console.log('\nFailed Spanish stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
-  success = false;
+  return;
 }
 
 console.log('\nUsing English and Spanish stop-words.');
 var result3 = findTerm(target_term, result_multi);
 if (result3) {
   console.log('\nFailed English, Spanish, invalid stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
-  success = false;
+  return;
 }
 
 // Confirm the probabilities are equal when using the Spanish stop-words list and a list containing Spanish and invalid stop-word paths.
@@ -75,8 +75,7 @@ for (var i=0; i<groupProbs1.length; i++) {
     console.log('\nFailed probability check for Spanish stop-words multi list.')
     console.log(groupProbs1[i]);
     console.log(groupProbs2[i]);
-    success = false;
-    break;
+    return;
   }
 }
 
