@@ -98,7 +98,7 @@ result = lda(documents, 2, 5, ['en', 'de']);
 To add a new language-specific stop-words list, register a file for the specific language. For example, to register a French stop-words list use the following code.
 
 ```js
-lda.registerStopWords('fr', '/path/to/the/french/stopwords.js')
+lda.registerStopwords('fr', '/path/to/the/french/stopwords.js')
 ```
 
 The contents of the file should follow the format of an [existing](https://github.com/primaryobjects/lda/blob/master/lib/stopwords_en.js) stop-words list. The format is shown below.

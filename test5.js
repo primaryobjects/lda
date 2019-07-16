@@ -10,15 +10,15 @@ var result_multi = lda(documents, 2, 5, ['invalid1', 'en', 'es', 'invalid2'], nu
 var findTerm = function(term, topics) {
   for (var i in topics) {
     var row = topics[i];
-    console.log('Topic ' + (parseInt(i) + 1));
+    //console.log('Topic ' + (parseInt(i) + 1));
 
     // For each term.
     for (var j in row) {
       var aterm = row[j];
-      console.log(aterm.term + ' (' + aterm.probability + '%)');
+      //console.log(aterm.term + ' (' + aterm.probability + '%)');
 
       if (aterm.term === term) {
-        console.log('*** Found ' + term);
+        console.log('Found "' + term + '"');
         return term;
       }
     }
@@ -37,21 +37,21 @@ var target_term = 'tu'; // Stop-words term that should be removed when using the
 console.log('Using English stop-words.');
 var result1 = findTerm(target_term, result_en);
 if (!result1) {
-  console.log('\nFailed English stop-words check. Failed to find expected stop-word: "' + target_term + '" as a topic.')
+  console.log('\nFailed English stop-words check! Failed to find expected stop-word: "' + target_term + '" as a topic.')
   return;
 }
 
 console.log('\nUsing Spanish stop-words.');
 var result2 = findTerm(target_term, result_es)
 if (result2) {
-  console.log('\nFailed Spanish stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
+  console.log('\nFailed Spanish stop-words check! Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
   return;
 }
 
 console.log('\nUsing English and Spanish stop-words.');
 var result3 = findTerm(target_term, result_multi);
 if (result3) {
-  console.log('\nFailed Multiple stop-words check. Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
+  console.log('\nFailed Multiple stop-words check! Found stop-word: "' + target_term + '" as a topic, when it should have been removed.')
   return;
 }
 
@@ -72,7 +72,7 @@ result_multi.forEach(group => {
 
 for (var i=0; i<groupProbs1.length; i++) {
   if (groupProbs1[i] !== groupProbs2[i]) {
-    console.log('\nFailed probability check for Spanish stop-words multi list.')
+    console.log('\nFailed probability check for Spanish stop-words multi list!')
     console.log(groupProbs1[i]);
     console.log(groupProbs2[i]);
     return;
