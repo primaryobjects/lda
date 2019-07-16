@@ -34,7 +34,7 @@ var success1 = false;
 var success2 = false;
 var success3 = false;
 
-console.log('Test 1: Run lda with the default stop-words list. Ignore warning.');
+console.log('Test 1: Run lda without a custom stop-words list. Ignore warning.');
 
 results = lda(documents, 2, 5, ['custom_lang'], null, null, 123);
 
@@ -49,7 +49,7 @@ else {
   return;
 }
 
-console.log('\nTest 2: Run lda with a default stop-words list copied into the lib folder.');
+console.log('\nTest 2: Run lda with a custom stop-words list copied into the lib folder.');
 
 // Copy the language file to a default file in the lib folder.
 const copyPath = './lib/stopwords_' + filePath.replace('./', '');
@@ -72,7 +72,7 @@ else {
 // Cleanup.
 fs.unlinkSync(copyPath);
 
-console.log('\nTest 3: Register the custom stop-words list.');
+console.log('\nTest 3: Register a custom stop-words list programmatically.');
 lda.registerStopwords('custom_lang', path.resolve(__dirname, filePath));
 results = lda(documents, 2, 5, ['custom_lang'], null, null, 123);
 
