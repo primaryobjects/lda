@@ -69,20 +69,20 @@ var result = lda(documents, 2, 5);
 for (var i in result) {
 	var row = result[i];
 	console.log('Topic ' + (parseInt(i) + 1));
-	
+
 	// For each term.
 	for (var j in row) {
 		var term = row[j];
 		console.log(term.term + ' (' + term.probability + '%)');
 	}
-	
+
 	console.log('');
 }
 ```
 
 ## Additional Languages
 
-LDA uses [stop-words](https://en.wikipedia.org/wiki/Stop_words) to ignore common terms in the text (for example: this, that, it, we). By default, the stop-words list uses English. To use additional languages, you can specify an array of language ids, as follows: 
+LDA uses [stop-words](https://en.wikipedia.org/wiki/Stop_words) to ignore common terms in the text (for example: this, that, it, we). By default, the stop-words list uses English. To use additional languages, you can specify an array of language ids, as follows:
 
 ```javascript
 // Use English (this is the default).
@@ -95,7 +95,13 @@ result = lda(documents, 2, 5, ['de']);
 result = lda(documents, 2, 5, ['en', 'de']);
 ```
 
-To add a new language-specific stop-words list, create a file /lda/lib/stopwords_XX.js where XX is the id for the language. For example, a French stop-words list could be named "stopwords_fr.js". The contents of the file should follow the format of an [existing](https://github.com/primaryobjects/lda/blob/master/lib/stopwords_en.js) stop-words list. The format is, as follows:
+To add a new language-specific stop-words list, register a file for the specific language. For example, to register a French stop-words list use the following code.
+
+```js
+lda.registerStopwords('fr', '/path/to/the/french/stopwords.js')
+```
+
+The contents of the file should follow the format of an [existing](https://github.com/primaryobjects/lda/blob/master/lib/stopwords_en.js) stop-words list. The format is shown below.
 
 ```javascript
 exports.stop_words = [
